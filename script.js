@@ -12,7 +12,7 @@
     // handle the update
     // sync with storage
     let container = document.getElementById('container');
-
+    let currentDay = document.getElementById('currentDay');
     // console.log(moment().format("MMM Do YY"));
     // function createTimeBlocks(){
     //     for (let i = 9; i <= 17; i++) {
@@ -21,6 +21,7 @@
     // };
     // createTimeBlocks();
     ///////////////////////
+    currentDay.append(moment().format('MMMM Do YYYY'));
     console.log(moment().format('dddd'));
     function createTimeBlocks(){
         
@@ -28,18 +29,10 @@
         for (let i = 9; i <= 17; i++) {
             container.append(i + ':00');
             console.log(i + ':00');
-            // generateOneBlock(timeSlot)
         };
     };
     
-    // at 5 i woke up
-    // at 7 I ate
-    // at 9 I took a nap
-    // {
-        //     “5”: ‘I woke up’,
-        //     “7": ‘I ate’
-        // }
-        // [‘I woke up’, ‘’, ‘I ate’];
+
         createTimeBlocks();
         function saveToSomeSlot(){
             // super important please watch the !!!!lecture office hours!!!!
