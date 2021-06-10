@@ -13,8 +13,7 @@ body {
     padding: 5px;
     position: relative;
     flex: 1 1 auto;
-    width: 1%;
-    margin-bottom: 1px;
+    width: 0%;
     border-bottom: 1px solid #dee3f7;
   }
   
@@ -30,11 +29,21 @@ body {
     white-space: pre-wrap;
   }
   
+  #container {
+      border-top: 1px solid #d2e6f0;
+  }
+
   .time-block {
     text-align: center;
     border-radius: 15px;
   }
   
+  .border-top {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+  }
+
   .row {
     white-space: pre-wrap;
     height: 40px;
@@ -71,7 +80,7 @@ body {
   }
   
   .saveBtn:hover {
-    font-size: 15px;
+    font-size: 12px;
     transition: all 0.3s ease-in-out;
   }
   
